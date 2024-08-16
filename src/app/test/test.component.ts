@@ -20,4 +20,9 @@ export class TestComponent implements OnInit {
       
   }
 
+  myfun(){
+    alert("Hiii");
+    this.uname="Sachin Patil"
+  }
+
 }
