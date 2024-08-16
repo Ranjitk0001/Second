@@ -10,8 +10,8 @@ export class EmpService {
   getEmpList(){
     return[
       {"eno":100, "ename":"Sachin", "salary":15000},
-      {"eno":102, "ename":"Ranjit", "salary":65000},
-      {"eno":103, "ename":"Jayraj", "salary":90000},
+      {"eno":102, "ename":"Ranjit", "salary":6500},
+      {"eno":103, "ename":"Jayraj", "salary":900},
     ]
   }
 }
