@@ -5,4 +5,15 @@ Hello {{uname}}!!
 <!-- In Interpolation , the data flows from .ts file to .html file -->
 
 <br>
+<br>
+<!-- Data binding -->
+<input type="text" value="{{uname}}"><br>
+ <input type="text" value="{{uname}}" disabled><br>
+
+ <input type="text" value="{{uname}}" disabled="{{flag1}}"><br>
+ <input type="text" value="{{uname}}" disabled="{{flag2}}"><br>
+
+
+ <!-- In Data binding , the data flows from .ts file to .html file.But data binding fail in case of boolean values as
+  we can see above examples. -->
 

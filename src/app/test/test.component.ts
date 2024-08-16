@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   uname:string="Ranjit Kale" 
+  flag1:boolean=true;
+  flag2:boolean=false;
 
   constructor(){
 
