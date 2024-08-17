@@ -8,10 +8,18 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
+    serverPath:string="http://localhost:8085/";
   constructor(private httpClient:HttpClient) { }
 
-  getData():Observable<any>
+  getData(url:string):Observable<any>
   {
-    return this.httpClient.get("http://localhost:8084/studentlist");
+    return this.httpClient.get(this.serverPath+url);
   }
+
+  insertData(url:string,obj:any):Observable<any>
+  {
+    return this.httpClient.post(this.serverPath+url,obj);
+  }
+
+
 }
